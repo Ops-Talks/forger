@@ -59,15 +59,14 @@ forger --help
 
 ## Usage
 
-```bash
+```sh
 # Basic usage
-forger generate-users --count 10 --output users.json
+forger # Will generate 10 users and a output file users.json
 
-# Custom fields
-forger generate-users --count 5 --fields name,email,address --output custom_users.json
+# With parameters
+$ forger -c 50 -o user50.json
 
-# Specific locale
-forger generate-users --count 3 --locale fr_FR --output french_users.json
+$ forger -c 50 -o user50 #without file extension
 ```
 
 ## Development

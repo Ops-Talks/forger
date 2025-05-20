@@ -1,6 +1,6 @@
 [project]
 name = "forger"
-version = "0.1.1"
+version = "0.1.2"
 description = "Generate Fake Data anda export to JSON files"
 authors = [
     {name = "weyderfs",email = "weyderfs@gmail.com"}
