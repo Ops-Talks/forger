@@ -2,6 +2,10 @@
 
 A Python CLI tool for generating fake data and exporting it to JSON files.
 
+<p align="center" width="100%">
+    <img width="50%"src="assets/forger.png" />
+</p>
+
 ## Overview
 
 Forger helps you generate realistic test data using the Faker library. It's perfect for developers who need to quickly create test datasets for their applications.
@@ -55,16 +59,6 @@ forger generate-users --count 3 --locale fr_FR --output french_users.json
 3. Install dependencies: `poetry install`
 4. Run tests: `poetry run pytest`
 
-### Adding Dependencies
-
-```bash
-# Production dependency
-poetry add package-name
-
-# Development dependency
-poetry add --group dev package-name
-```
-
 ## Contributing
 
 1. Fork the repository
@@ -76,7 +70,3 @@ poetry add --group dev package-name
 ## License
 
 Apache 2.0 License - see [LICENSE](LICENSE) for details.
-
-## Support
-
-Open an issue in the GitHub repository for questions or problems.
