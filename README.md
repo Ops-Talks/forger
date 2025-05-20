@@ -19,6 +19,24 @@ Forger helps you generate realistic test data using the Faker library. It's perf
 - Configurable output format
 - Batch processing
 
+## Sample of JSON result file
+
+```json
+{
+    "id": "21f94bb0-3756-417b-9b02-60052c81c84c",
+    "name": "Michele",
+    "middle_name": "Pamela",
+    "last_name": "Martin",
+    "email": "michele.martin@example.com",
+    "password": "6y84DZsk$%V+",
+    "gender": "male",
+    "age": 49,
+    "is_active": true,
+    "created_at": "2025-05-20T11:59:05.956115",
+    "updated_at": "2025-05-20T11:59:05.956117"
+  }
+```
+
 ## Requirements
 
 - Python 3.13+
