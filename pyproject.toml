@@ -1,0 +1,20 @@
+[project]
+name = "forger"
+version = "0.0.1"
+description = "Generate Fake Data anda export to JSON files"
+authors = [
+    {name = "weyderfs",email = "weyderfs@gmail.com"}
+]
+license = {text = "Apache 2.0"}
+readme = "README.md"
+requires-python = ">=3.13, <4.0"
+dependencies = [
+    "faker (>=37.3.0,<38.0.0)",
+    "datetime (>=5.5,<6.0)",
+    "typer (>=0.15.4,<0.16.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
