@@ -1,61 +1,82 @@
 # Forger
 
-A Python tool for generating fake data and exporting it to JSON files. Built with Faker, Typer, and Poetry.
+A Python CLI tool for generating fake data and exporting it to JSON files.
 
-## Description
+## Overview
 
-Forger is a command-line tool that helps you generate realistic fake data for testing and development purposes. It uses the Faker library to create various types of fake data and exports them to JSON files.
+Forger helps you generate realistic test data using the Faker library. It's perfect for developers who need to quickly create test datasets for their applications.
 
 ## Features
 
-- Generate fake user data
-- Export data to JSON format
-- Customizable data generation
-- Command-line interface using Typer
+- Generate fake user data with customizable fields
+- Export to JSON format
+- Support for multiple data types (names, addresses, emails)
+- Command-line interface with Typer
+- Configurable output format
+- Batch processing
 
 ## Requirements
 
-- Python 3.13 or higher
-- Poetry for dependency management
+- Python 3.13+
+- Poetry
+- Git
 
-## Installation
+## Quick Start
 
-1. Clone the repository:
+1. Clone and install:
 ```bash
 git clone https://github.com/yourusername/forger.git
 cd forger
+poetry install
 ```
 
-2. Install dependencies using Poetry:
+2. Verify installation:
 ```bash
-poetry install
+forger --help
 ```
 
 ## Usage
 
-After installation, you can use Forger through the command line:
-
 ```bash
-# Generate fake user data
-poetry run python main.py generate-users --count 10 --output users.json
+# Basic usage
+forger generate-users --count 10 --output users.json
+
+# Custom fields
+forger generate-users --count 5 --fields name,email,address --output custom_users.json
+
+# Specific locale
+forger generate-users --count 3 --locale fr_FR --output french_users.json
 ```
 
 ## Development
 
-This project uses Poetry for dependency management. To add new dependencies:
+1. Fork and clone the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Install dependencies: `poetry install`
+4. Run tests: `poetry run pytest`
+
+### Adding Dependencies
 
 ```bash
+# Production dependency
 poetry add package-name
+
+# Development dependency
+poetry add --group dev package-name
 ```
-
-## License
-
-This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
-
-## Author
-
-- weyderfs (weyderfs@gmail.com)
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## License
+
+Apache 2.0 License - see [LICENSE](LICENSE) for details.
+
+## Support
+
+Open an issue in the GitHub repository for questions or problems.
