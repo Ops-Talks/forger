@@ -16,6 +16,9 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
+    - name: Display the path
+      shell: bash
+      run: echo $PATH
     - uses: actions/checkout@v4
 
     - name: Set up Python 3.10
