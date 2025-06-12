@@ -22,11 +22,7 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
-
-    - name: Poetry Install
-      shell: bash
-      uses: ClementWalter/poetry-action@v1
-    
+   
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
