@@ -25,7 +25,6 @@ jobs:
 
     - name: Poetry Install
       uses: ClementWalter/poetry-action@v1
-      with: bash
     
     - name: Lint with flake8
       run: |
